@@ -1,0 +1,6 @@
+@amber_sun_api_HostAddress = http://localhost:5084
+
+GET {{amber_sun_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
