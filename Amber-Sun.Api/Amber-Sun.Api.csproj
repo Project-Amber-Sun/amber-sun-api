@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="..\amber.sun.Domain\amber.sun.Domain.csproj" />
+    <PackageReference Include="\amber.sun.Domain\amber.sun.Domain.csproj" />
   </ItemGroup>
 
 </Project>
