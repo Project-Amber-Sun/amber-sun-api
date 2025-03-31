@@ -15,6 +15,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Amber-Sun.Domain\Amber-Sun.Domain.csproj" />
+    <ProjectReference Include="..\Amber-Sun.data\Amber-Sun.data.csproj" />
+    <ProjectReference Include="..\Amber-Sun.Services\Amber-Sun.Services.csproj" />
   </ItemGroup>
 
 </Project>
