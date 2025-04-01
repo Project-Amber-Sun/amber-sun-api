@@ -8,7 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="..\amber.sun.Domain\amber.sun.Domain.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlite" Version="3.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Amber-Sun.Domain\Amber-Sun.Domain.csproj" />
+    <ProjectReference Include="..\Amber-Sun.data\Amber-Sun.data.csproj" />
+    <ProjectReference Include="..\Amber-Sun.Services\Amber-Sun.Services.csproj" />
   </ItemGroup>
 
 </Project>
