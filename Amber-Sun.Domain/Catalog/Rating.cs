@@ -1,8 +1,9 @@
-namespace Amber_Sun.Domain.Catalog;
+namespace Amber.Sun.Domain.Catalog;
 
 public class Rating 
 {
-    public int Stars{get; set;}
+    public int Id {get; set; }
+    public int Star{get; set;}
     public string? Username{get; set;} 
 
     public string? Review{get; set;}

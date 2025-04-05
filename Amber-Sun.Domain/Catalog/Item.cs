@@ -17,7 +17,7 @@ namespace AmberSun.Domain.Catalog{
         { this.Ratings.Add(rating); 
         }
         
-        public Item(string name, string description, string brand, decimal price){
+        public Item (string name, string description, string brand, decimal price){
 
             if (string.IsNullOrEmpty(name)) {
                 throw new ArgumentException(name);
