@@ -18,7 +18,7 @@ if (stars < 1 || stars > 5)
 if (string.IsNullOrEmpty(Username)) {
     throw new ArgumentException("Username cannot be null.");
     }
-    this.Stars = stars;
+    this.Star = stars;
     this.Username = Username;
     this.Review = review;
     }

@@ -1,5 +1,5 @@
 using System;
-using Amber_Sun.Domain.Catalog;
+using Amber.Sun.Domain.Catalog;
 
 namespace AmberSun.Domain.Catalog{
     public class Item
