@@ -1,7 +1,7 @@
 using System;
 using Amber.Sun.Domain.Catalog;
 
-namespace AmberSun.Domain.Catalog{
+namespace AmberSun.Domain.Catalog {
     public class Item
     {
         public int Id { get; set; }
@@ -11,7 +11,7 @@ namespace AmberSun.Domain.Catalog{
         public string Brand { get; set;}
         public decimal Price { get; set; }
 
-        public List<Rating> Ratings { get; set;}
+        public List<Rating> Ratings { get; set;} = new List<Rating>();
 
         public void AddRating(Rating rating)
         { this.Ratings.Add(rating); 
