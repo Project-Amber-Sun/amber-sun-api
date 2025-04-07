@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amber-Sun.Domain", "Amber-S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "amber.sun.data", "amber.sun.data\amber.sun.data.csproj", "{FBCC3A09-F3C9-429F-87DD-5EFD488BA5C1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BD647254-AA2D-4E2A-9B51-F995EB4E6175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{Amber-Sun}.Domain.Tests", "tests\{Amber-Sun}.Domain.Tests\{Amber-Sun}.Domain.Tests.csproj", "{9236755E-5DAF-4B3E-B9BC-95525360C216}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,12 @@ Global
 		{FBCC3A09-F3C9-429F-87DD-5EFD488BA5C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBCC3A09-F3C9-429F-87DD-5EFD488BA5C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBCC3A09-F3C9-429F-87DD-5EFD488BA5C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9236755E-5DAF-4B3E-B9BC-95525360C216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9236755E-5DAF-4B3E-B9BC-95525360C216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9236755E-5DAF-4B3E-B9BC-95525360C216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9236755E-5DAF-4B3E-B9BC-95525360C216}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9236755E-5DAF-4B3E-B9BC-95525360C216} = {BD647254-AA2D-4E2A-9B51-F995EB4E6175}
 	EndGlobalSection
 EndGlobal
