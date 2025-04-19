@@ -12,6 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(options => options.UseSqlite("Data Source =../Registrar.sqlite",
 b => b.MigrationsAssembly("Amber-Sun.Api"))
 );
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:300")
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
+
 
 
 builder.Services.AddEndpointsApiExplorer();
@@ -26,6 +36,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.UseCors();
 
 app.UseHttpsRedirection();
 
