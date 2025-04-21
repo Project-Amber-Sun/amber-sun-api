@@ -13,6 +13,15 @@ builder.Services.AddDbContext<StoreContext>(options => options.UseSqlite("Data S
 b => b.MigrationsAssembly("Amber-Sun.Api"))
 );
 
+Builder.services.AddCors(Options =>
+{
+    Options.AddDefaultPolicy(builder =>
+    {
+        builder.WithOrigins("http://localhost:3000")
+        // .AllowAnyHeader()
+        .AllowAnyMethod();
+        });
+});
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -26,6 +35,8 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.UseCors();
 
 app.UseHttpsRedirection();
 
