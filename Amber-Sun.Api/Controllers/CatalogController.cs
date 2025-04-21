@@ -3,9 +3,16 @@ using Amber.Sun.Domain.Catalog;
 using Amber.Sun.Data;
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
+using System.Web.Mvc;
 
 namespace Amber.Sun.Api.Controllers
 {
+    ### Get token from Auth0
+    curl --request POST \
+  --url https://dev-e5y2va5cni4m1e4c.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"IQUTpN3JG7bSXZZCl5u5qNx1A1xi2wMN","client_secret":"YmdLW7Sre5RUc8ueQw3oZEhAISGE-YznGPXuNVj4LySAs-i8CT--OXBIN5X0TGAu","audience":"https://Amber-Sun","grant_type":"client_credentials"}'
+   
     [ApiController]
     [Route("/catalog")]
     public class CatalogController : ControllerBase
@@ -76,6 +83,12 @@ namespace Amber.Sun.Api.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
+        public IActionResult Delete(int id)
+        {
+            var item = _db.Items.Find(id);
+            
+        }
         public IActionResult Delete(int id)
         {
             var item = _db.Items.Find(id);
